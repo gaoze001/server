@@ -369,6 +369,7 @@ public class Main {
 
         InputCreateChannel inputCreateChannel = new InputCreateChannel();
         inputCreateChannel.setName("MyChannel");
+        inputCreateChannel.setOwner("admin");
         IMResult<OutputCreateChannel> resultCreateChannel = GeneralAdmin.createChannel(inputCreateChannel);
         if (resultCreateChannel != null && resultCreateChannel.getErrorCode() == ErrorCode.ERROR_CODE_SUCCESS) {
             System.out.println("success");

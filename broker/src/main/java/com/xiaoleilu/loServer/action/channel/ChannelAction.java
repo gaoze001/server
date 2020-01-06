@@ -31,37 +31,38 @@ abstract public class ChannelAction extends Action {
     public ErrorCode preAction(Request request, Response response) {
         String nonce = request.getHeader("nonce");
         String timestamp = request.getHeader("timestamp");
-        String sign = request.getHeader("sign");
-        String cid = request.getHeader("cid");
+//        String sign = request.getHeader("sign");
+//        String cid = request.getHeader("cid");
 
-        if (StringUtil.isNullOrEmpty(nonce) || StringUtil.isNullOrEmpty(timestamp) || StringUtil.isNullOrEmpty(sign) || StringUtil.isNullOrEmpty(cid)) {
-            return ErrorCode.INVALID_PARAMETER;
-        }
-
-        if (!mLimitCounter.isGranted(cid)) {
-            return ErrorCode.ERROR_CODE_OVER_FREQUENCY;
-        }
-
-        Long ts;
-        try {
-            ts = Long.parseLong(timestamp);
-        } catch (NumberFormatException e) {
-            e.printStackTrace();
-            return ErrorCode.INVALID_PARAMETER;
-        }
-
-        if (System.currentTimeMillis() - ts > 2 * 60 * 60 * 1000) {
-            return ErrorCode.ERROR_CODE_SIGN_EXPIRED;
-        }
-
-        channelInfo = messagesStore.getChannelInfo(cid);
-        if (channelInfo == null) {
-            return ErrorCode.INVALID_PARAMETER;
-        }
-
-        String str = nonce + "|" + channelInfo.getSecret() + "|" + timestamp;
-        String localSign = DigestUtils.sha1Hex(str);
-        return localSign.equals(sign) ? ErrorCode.ERROR_CODE_SUCCESS : ErrorCode.ERROR_CODE_AUTH_FAILURE;
+//        if (StringUtil.isNullOrEmpty(nonce) || StringUtil.isNullOrEmpty(timestamp) || StringUtil.isNullOrEmpty(sign) || StringUtil.isNullOrEmpty(cid)) {
+//            return ErrorCode.INVALID_PARAMETER;
+//        }
+//
+//        if (!mLimitCounter.isGranted(cid)) {
+//            return ErrorCode.ERROR_CODE_OVER_FREQUENCY;
+//        }
+//
+//        Long ts;
+//        try {
+//            ts = Long.parseLong(timestamp);
+//        } catch (NumberFormatException e) {
+//            e.printStackTrace();
+//            return ErrorCode.INVALID_PARAMETER;
+//        }
+//
+//        if (System.currentTimeMillis() - ts > 2 * 60 * 60 * 1000) {
+//            return ErrorCode.ERROR_CODE_SIGN_EXPIRED;
+//        }
+//
+//        channelInfo = messagesStore.getChannelInfo(cid);
+//        if (channelInfo == null) {
+//            return ErrorCode.INVALID_PARAMETER;
+//        }
+//
+//        String str = nonce + "|" + channelInfo.getSecret() + "|" + timestamp;
+//        String localSign = DigestUtils.sha1Hex(str);
+//        return localSign.equals(sign) ? ErrorCode.ERROR_CODE_SUCCESS : ErrorCode.ERROR_CODE_AUTH_FAILURE;
+        return ErrorCode.ERROR_CODE_SUCCESS;
     }
 
     protected void sendResponse(Response response, ErrorCode errorCode, Object data) {

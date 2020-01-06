@@ -152,6 +152,8 @@ public class Server {
 
     private static File defaultConfigFile() {
         String configPath = System.getProperty("wildfirechat.path", null);
+//        String configPath = new Server().getClass().getResource("/").getPath();
+        System.out.println("configPath:"+configPath);
         return new File(configPath, IConfig.DEFAULT_CONFIG);
     }
 
