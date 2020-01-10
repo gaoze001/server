@@ -1,11 +1,11 @@
-## 野火IM解决方案
+## 鼠聊IM解决方案
 
-野火IM是一套跨平台、核心功能开源的即时通讯解决方案，主要包含以下内容。
+鼠聊IM是一套跨平台、核心功能开源的即时通讯解决方案，主要包含以下内容。
 
 | 仓库                                                         | 说明                                                    | 备注 |
 | ------------------------------------------------------------ | ------------------------------------------------------- | ---- |
-| [android-chat](https://github.com/wildfirechat/android-chat) | 野火IM Android SDK源码和App源码                       |可以很方便地进行二次开发，或集成到现有应用当中      |
-| [ios-chat](https://github.com/wildfirechat/ios-chat)         | 野火IM iOS SDK源码和App源码                            |可以很方便地进行二次开发，或集成到现有应用当中      |
+| [android-chat](https://github.com/wildfirechat/android-chat) | 鼠聊IM Android SDK源码和App源码                       |可以很方便地进行二次开发，或集成到现有应用当中      |
+| [ios-chat](https://github.com/wildfirechat/ios-chat)         | 鼠聊IM iOS SDK源码和App源码                            |可以很方便地进行二次开发，或集成到现有应用当中      |
 | [pc-chat](https://github.com/wildfirechat/pc-chat)           | 基于[Electron](https://electronjs.org/)开发的PC平台应用 |      |
 | [web-chat](https://github.com/wildfirechat/web-chat)          | Web平台的Demo, [体验地址](http://web.wildfirechat.cn)   |      |
 | [wx-chat](https://github.com/wildfirechat/wx-chat)           | 微信小程序平台的Demo   |      |
@@ -13,17 +13,17 @@
 | [app server](https://github.com/wildfirechat/app_server)     | 应用服务端                                          |      |
 | [robot_server](https://github.com/wildfirechat/robot_server) | 机器人服务端                                        |      |
 | [push_server](https://github.com/wildfirechat/push_server)   | 推送服务器                                              |      |
-| [docs](https://github.com/wildfirechat/docs)                 | 野火IM相关文档，包含设计、概念、开发、使用说明          |      | |                                            |
+| [docs](https://github.com/wildfirechat/docs)                 | 鼠聊IM相关文档，包含设计、概念、开发、使用说明          |      | |                                            |
 
 # server
-本工程为野火IM 社区版IM服务软件。野火IM作为一个通用的即时通讯解决方案，可以集成到各种应用中。请阅读[docs](http://docs.wildfirechat.cn)或下载服务器[发布版本](https://github.com/wildfirechat/server/releases)
+本工程为鼠聊IM 社区版IM服务软件。鼠聊IM作为一个通用的即时通讯解决方案，可以集成到各种应用中。请阅读[docs](http://docs.wildfirechat.cn)或下载服务器[发布版本](https://github.com/wildfirechat/server/releases)
 
 
 开发一套IM系统真的很艰辛，请路过的朋友们给点个star，支持我们坚持下去🙏🙏🙏🙏🙏
 
 ### 联系我们
 
-> 商务合作请优先采用邮箱和我们联系。技术问题请到[野火IM论坛](http://bbs.wildfirechat.cn/)发帖交流
+> 商务合作请优先采用邮箱和我们联系。技术问题请到[鼠聊IM论坛](http://bbs.wildfirechat.cn/)发帖交流
 
 1. heavyrain.lee  邮箱: heavyrain.lee@wildfirechat.cn  微信：wildfirechat
 2. imndx  邮箱: imndx@wildfirechat.cn  微信：wfchat
@@ -31,22 +31,22 @@
 ### 问题交流
 
 1. 如果大家发现bug，请在GitHub提issue
-2. 其他问题，请到[野火IM论坛](http://bbs.wildfirechat.cn/)进行交流学习
+2. 其他问题，请到[鼠聊IM论坛](http://bbs.wildfirechat.cn/)进行交流学习
 3. 微信公众号
 
 <img src="http://static.wildfirechat.cn/wx_wfc_qrcode.jpg" width = 50% height = 50% />
 
-> 强烈建议关注我们的公众号。我们有新版本发布或者有重大更新会通过公众号通知大家，另外我们也会不定期的发布一些关于野火IM的技术介绍。
+> 强烈建议关注我们的公众号。我们有新版本发布或者有重大更新会通过公众号通知大家，另外我们也会不定期的发布一些关于鼠聊IM的技术介绍。
 
 #### 体验Demo
 我们提供了体验demo，请使用微信扫码下载安装体验
 
-![野火IM](http://static.wildfirechat.cn/download_qrcode.png)
+![鼠聊IM](http://static.wildfirechat.cn/download_qrcode.png)
 
-#### 加入野火官方体验交流群
-使用野火IM移动客户端扫码下面二维码（不是使用微信扫码），和野火IM的爱好者一起畅谈野火IM的问题和经验：
+#### 加入鼠聊官方体验交流群
+使用鼠聊IM移动客户端扫码下面二维码（不是使用微信扫码），和鼠聊IM的爱好者一起畅谈鼠聊IM的问题和经验：
 
-![野火IM官方交流群](http://static.wildfirechat.cn/wildfirechat_official_group.jpeg)
+![鼠聊IM官方交流群](http://static.wildfirechat.cn/wildfirechat_official_group.jpeg)
 
 #### 应用截图
 ![ios-demo](http://static.wildfirechat.cn/ios-demo.gif)
