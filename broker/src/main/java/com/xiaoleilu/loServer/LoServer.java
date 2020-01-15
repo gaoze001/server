@@ -70,8 +70,8 @@ public class LoServer {
                 .childOption(ChannelOption.SO_KEEPALIVE, true)
                 .option(ChannelOption.SO_REUSEADDR, true)
                 .childOption(ChannelOption.TCP_NODELAY, true)
-                .childOption(ChannelOption.SO_SNDBUF, 1024*64)
-                .childOption(ChannelOption.SO_RCVBUF, 1024*64)
+                .childOption(ChannelOption.SO_SNDBUF, 1024*1024*64)
+                .childOption(ChannelOption.SO_RCVBUF, 1024*1024*64)
                 .childHandler(new ChannelInitializer<SocketChannel>() {
                     @Override
                     protected void initChannel(SocketChannel socketChannel) throws Exception {
